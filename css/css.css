@@ -13,11 +13,10 @@ header{
     border-bottom: 1px solid #DADADA;
 }
 .header_center{
-    max-width: 1000px;
+    max-width: 1300px;
     margin: auto;
     margin-top: 1em;
 
-    
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -36,24 +35,36 @@ header{
     margin-left: 2em;
     display: block;
 }
-/*-------------------*/
+/*----- nav*/
 .nav{
-    width: 22em;
+    width: auto;
     display: flex;
     margin-left: 5em;
     margin-top: 1em;
     flex-direction: row;
     list-style: none;
-    justify-content: space-between;
 }
-.nav li{
+.nav-titulo{
+    display: block;
+    width: 7.5em;
+    text-align: center;
     font-size: 1.5em;
-    color: #3F3F3F;
+    font-weight: 900;
 }
-.nav li img{
+.nav-titulo a:hover{
+    color: blue;+
+    transition: 0.5s;
+}
+.nav-titulo a{
+    display: block;
+    text-decoration: none;
+    color: #363636;
+    width: 100%;
+}
+.grados img{
     width: 0.6em;
 }
-/*-------------------------*/
+/*----- redes sociales*/
 .ico_redes{
     display: flex;
     justify-content: space-between;
@@ -65,8 +76,39 @@ header{
     height: 1.8em;
 }
 
-
-
-
+/*----- submenu*/
+.grados{
+    position: relative;
+    width: 7em;
+}
+.subMenu{
+    display: none;
+    width: 20em;
+    position: absolute;
+    background-color: #E5E8E8;
+    list-style: none;
+    color: #fff;
+    font-size: 0.6em;
+    border-radius: 3px;
+}
+.grados:hover .subMenu{
+    display: block;
+}
+.subMenu .nav-titulo{
+    width: 100%;
+}
+.subMenu .nav-titulo a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #363636;
+}
+.subMenu .nav-titulo:hover{
+    background-color: #C8C8C8;
+    transition: 0.5s;
+}
 
 
